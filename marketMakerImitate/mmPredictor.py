@@ -38,7 +38,7 @@ if __name__ == '__main__':
     print("test samples: " + str(X_test.shape))
     #print(X_train[0:10,:])
 
-    mlp = MLPClassifier(hidden_layer_sizes=(8), solver='sgd', batch_size='auto',learning_rate_init=0.01, activation='logistic', max_iter=1000)
+    mlp = MLPClassifier(verbose='True', hidden_layer_sizes=(8), solver='sgd', batch_size='auto', learning_rate_init=0.01, activation='logistic', max_iter=1000)
     mlp.fit(X_train, y_train)
 
     score = mlp.score(X_test, y_test)
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     plt.xlabel('Iterations')
     plt.ylabel('Loss')
     plt.figtext(0.01,0.001,info)
-    fig.suptitle('With vector normalization')
+    fig.suptitle('With feature normalization')
     
     plt.show()
      
