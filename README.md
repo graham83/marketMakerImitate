@@ -2,15 +2,14 @@
 https://github.com/graham83/ML-examples.git
 
 Utilising scikit learn MLPClassifer to try to imitate a basic market making algorithm in the Bund.  This is a very basic example of how supervised learning can be used to imitate a trading algorithm behavior, given the algorithms current position and relevant market data.  
-
 This is a shallow neural network so a bit of expert input for feature engineering helps a lot e.g. Instead of looking at the orders in the context of price action, the features are derived from the time and sales order flow.  The network inputs represent order flow of time and sales in the market, broken down into buy and sell aggressor order size categories captured and the current market maker strategy position (flat, long, short).
 
 Note: I have traditionally utilized AForge.NET and Encog in C# for machine learning, but these libraries are outdated and don't allow one to use the latest ML innovations e.g. AForge only has sigmoid activation which is much less efficient for training deep neural networks (as opposed to ReLu activation for example). Thus still learning the python ropes, and I sometimes find it quicker to write helper functions then find the relevant library (normalize in this example).
 
 ### Files
-inputs.csv contains the input features
-outputs.csv contains the associated output features
-mmPredictor.py  is the classifer
+* inputs.csv contains the input features
+* outputs.csv contains the associated output features
+* mmPredictor.py  is the classifer
 
 ### Process
 1. Read training data into X,Y array
@@ -19,8 +18,8 @@ mmPredictor.py  is the classifer
 4. Run feed forward and backgward propagation on the training set using MLP.fit
 5. Score the model on the test set using MLP.score
 
-### ML 101 - Normalize and scale your inputs
-Using raw inputs, the learning curve is quite erratic and generalises poorly since the trainer ends suddenly. You can force it to continue training to improve performance however it is standard practice to normalize input features.
+### ML 101 - Normalize your features
+Using raw inputs, the learning curve is quite erratic and generalises poorly since the trainer stops after 2 consecutive training loss increases. A good reminder why it is standard practice to normalize your features.
 
 ![Market Maker No Normalization](https://github.com/graham83/marketMakerImitate/blob/master/Without%20Normalization.png)
 
