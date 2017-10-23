@@ -1,7 +1,8 @@
 # marketMakerImitate
 https://github.com/graham83/ML-examples.git
 
-Utilising scikit learn MLPClassifer to try to imitate a basic market making algorithm in the Bund.  This is a very basic example of how supervised learning can be used to imitate a trading algorithm behavior, given the algorithms current position and relevant market data.  
+Utilising scikit learn MLPClassifer to try to imitate a basic market making algorithm in the Bund.  This is a very basic example of how supervised learning can be used to imitate a trading algorithm behavior, given the algorithms current position and relevant market data.
+
 This is a shallow neural network so a bit of expert input for feature engineering helps a lot e.g. Instead of looking at the orders in the context of price action, the features are derived from the time and sales order flow.  The network inputs represent order flow of time and sales in the market, broken down into buy and sell aggressor order size categories captured and the current market maker strategy position (flat, long, short).
 
 Note: I have traditionally utilized AForge.NET and Encog in C# for machine learning, but these libraries are outdated and don't allow one to use the latest ML innovations e.g. AForge only has sigmoid activation which is much less efficient for training deep neural networks (as opposed to ReLu activation for example). Thus still learning the python ropes, and I sometimes find it quicker to write helper functions then find the relevant library (normalize in this example).
