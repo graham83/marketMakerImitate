@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "marketMakerImitate", "marketMakerImitate\marketMakerImitate.pyproj", "{11C334AA-E0B0-47C6-A329-D2D39597880E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C334AA-E0B0-47C6-A329-D2D39597880E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C334AA-E0B0-47C6-A329-D2D39597880E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {463587C7-AEF7-4FD4-A212-BD70693F6A0A}
+	EndGlobalSection
+EndGlobal
